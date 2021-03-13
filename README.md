@@ -16,6 +16,10 @@ Update Remote Modules independent of the web application. Update a module withou
 npm install @microflows/nodeVM
 ```
 
+## Getting start
+
+see minimal case in `examples`
+
 ## createLoadRemoteModule
 
 The `createLoadRemoteModule` function is used to inject dependencies into a `loadRemoteModule` function.
