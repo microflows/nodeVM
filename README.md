@@ -13,7 +13,7 @@ Update Remote Modules independent of the web application. Update a module withou
 ## Install
 
 ```bash
-npm install @microflows/nodeVM
+npm install @microflows/nodevm
 ```
 
 ## createLoadRemoteModule
