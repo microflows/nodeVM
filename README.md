@@ -186,4 +186,6 @@ Sites with a `content_security_policy` header set are likely to not work. CSP pu
 
 Joel Thoms (https://twitter.com/joelnet)
 
+Xia fan (https://github.com/sovlookup)
+
 Icon made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](www.flaticon.com)
