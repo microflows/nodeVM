@@ -1,6 +1,6 @@
-# Remote Module Loader ![coverage:100%](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)
+# nodeVM ![coverage:100%](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)
 
-Loads a CommonJS module from a remote URL for the Browser or Node.js.
+Dynamically load and run JS module from a remote URL for the Browser or Node.js.
 
 ![Lunar Module](https://raw.githubusercontent.com/Paciolan/remote-module-loader/master/media/logo-small.png)
 
@@ -13,7 +13,7 @@ Update Remote Modules independent of the web application. Update a module withou
 ## Install
 
 ```bash
-npm install @microflows/nodeVM
+npm install @microflows/nodevm
 ```
 
 ## Getting start
