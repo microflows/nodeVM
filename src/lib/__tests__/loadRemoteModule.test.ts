@@ -59,7 +59,7 @@ describe("lib/loadRemoteModule", () => {
 
   test("requires defaults to error", async () => {
     const expected = Error(
-      "Could not require 'test'. The 'requires' function was not provided."
+      "Cannot find module 'test' from 'src/lib/createRequires.ts'"
     );
     const loadRemoteModule = createLoadRemoteModule({ fetcher: mockFetcher });
     const module = await loadRemoteModule("http://requires.url");
