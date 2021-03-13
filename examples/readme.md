@@ -12,3 +12,5 @@ you can see:
 hello	# comes from remote JS file
 hello	# print class.name (class defined in remote JS file)
 ```
+
+remote JS code in https://github.com/microflows/mfNode

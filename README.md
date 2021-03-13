@@ -20,6 +20,10 @@ npm install @microflows/nodevm
 
 see minimal case in `examples`
 
+## How to make remote module or scripts?
+
+--> https://github.com/microflows/mfNode
+
 ## createLoadRemoteModule
 
 The `createLoadRemoteModule` function is used to inject dependencies into a `loadRemoteModule` function.
