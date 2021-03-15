@@ -1,7 +1,15 @@
 
-# nodeVM ![Lunar Module](https://raw.githubusercontent.com/Paciolan/remote-module-loader/master/media/logo-small.png)
-
-![coverage:100%](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)
+<div align="center">
+<img src="https://raw.githubusercontent.com/Paciolan/remote-module-loader/master/media/logo-small.png"/>
+<h1>nodeVM</h1>
+<p>
+Dynamically load and run JS module/scripts from a remote URL for the Browser or Node.js. Update project without redeploying.
+</p>
+<a href="https://img.shields.io/badge/coverage-100%25-brightgreen.svg"><img src="https://img.shields.io/badge/coverage-100%25-brightgreen.svg"/></a>
+<a href="https://github.com/microflows/nodeVM/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/microflows/nodeVM?color=379c9c&style=flat-square"/></a>
+<a href="https://github.com/microflows/nodeVM/stargazers"><img src="https://img.shields.io/github/stars/microflows/nodeVM?color=379c9c&style=flat-square"/></a>
+<a href="https://discord.com/invite/wGSABhbCzN"><img src="https://img.shields.io/discord/813599680713457665?label=chat&logo=discord&color=379c9c&style=flat-square"/></a>
+</div>
 
  - Dynamically load and run JS module from a remote URL for the Browser or Node.js.
  - Lazy Load Modules to keep initial load times down and load modules just in time, similar to Webpack's code splitting.
