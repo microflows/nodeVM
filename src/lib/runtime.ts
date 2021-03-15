@@ -1,5 +1,4 @@
 declare function require(name:string);
-
 const os = require("os")
 
 const __dirname: string = os.tmpdir();
@@ -11,7 +10,9 @@ const runtimeAttachment: Array<string> = [
   "var require = require('require')",
 ]
 
-const runtime: string = "\n" + runtimeAttachment.join("\n") + "\n"
+const runtimeDefault: string = "\n" + runtimeAttachment.join("\n") + "\n"
 
 
-export default runtime
+export default function runtimeInit( runtime: Array<string> ): string {
+  return runtimeDefault + runtime.join("\n") + "\n"
+}

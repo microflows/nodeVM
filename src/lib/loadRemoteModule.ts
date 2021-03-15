@@ -1,7 +1,7 @@
 import memoize from "./memoize";
 import xmlHttpRequestFetcher from "./xmlHttpRequestFetcher/index";
 import nodeFetcher from "./nodeFetcher";
-import runtime from "./runtime"
+import runtimeInit from "./runtime"
 import { createRequires } from "..";
 
 const isBrowser =
@@ -25,16 +25,18 @@ interface CreateLoadRemoteModule {
 
 export const createLoadRemoteModule: CreateLoadRemoteModule = ({
   requires,
-  fetcher
+  fetcher,
+  runtime
 } = {}) => {
   const _requires = requires || createRequires();
   const _fetcher = fetcher || defaultFetcher;
+  const _runtime = runtimeInit(runtime)
 
   return memoize(url =>
     _fetcher(url).then(data => {
       const exports = {};
       const module = { exports };
-      const func = new Function("require", "module", "exports", runtime +  data);
+      const func = new Function("require", "module", "exports", _runtime +  data);
       func(_requires, module, exports);
       return module.exports;
     })
