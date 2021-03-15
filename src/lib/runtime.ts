@@ -14,5 +14,6 @@ const runtimeDefault: string = "\n" + runtimeAttachment.join("\n") + "\n"
 
 
 export default function runtimeInit( runtime: Array<string> ): string {
+  runtime = runtime || []
   return runtimeDefault + runtime.join("\n") + "\n"
 }
