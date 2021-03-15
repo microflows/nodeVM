@@ -7,7 +7,7 @@
 <a href="https://github.com/microflows/nodeVM/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/microflows/nodeVM?color=379c9c&style=flat-square"/></a>
 <a href="https://github.com/microflows/nodeVM/stargazers"><img src="https://img.shields.io/github/stars/microflows/nodeVM?color=379c9c&style=flat-square"/></a>
 <a href="https://discord.com/invite/wGSABhbCzN"><img src="https://img.shields.io/discord/813599680713457665?label=chat&logo=discord&color=379c9c&style=flat-square"/></a>
-
+<a href="https://packagephobia.now.sh/badge?p=@microflows/nodevm"><img src="https://packagephobia.now.sh/badge?p=@microflows/nodevm"/></a>
 </div>
 
 
