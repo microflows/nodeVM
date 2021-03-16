@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "SOVLOOKUP",
+      "name": "于北",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53158137?v=4",
+      "profile": "https://github.com/SOVLOOKUP",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "nodeVM",
+  "projectOwner": "microflows",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
