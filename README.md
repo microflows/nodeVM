@@ -6,7 +6,7 @@
 
 <a href="https://img.shields.io/badge/coverage-100%25-brightgreen.svg"><img src="https://img.shields.io/badge/coverage-100%25-brightgreen.svg"/></a>
 <a href="https://github.com/microflows/nodeVM/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/microflows/nodeVM?color=379c9c&style=flat-square"/></a>
-<a href="https://github.com/microflows/nodeVM"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square"/></a>
+<a href="https://github.com/microflows/nodeVM"><img src="https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square"/></a>
 <a href="https://github.com/microflows/nodeVM/stargazers"><img src="https://img.shields.io/github/stars/microflows/nodeVM?color=379c9c&style=flat-square"/></a>
 <a href="https://discord.com/invite/wGSABhbCzN"><img src="https://img.shields.io/discord/813599680713457665?label=chat&logo=discord&color=379c9c&style=flat-square"/></a>
 <a href="https://packagephobia.now.sh/badge?p=@microflows/nodevm"><img src="https://packagephobia.now.sh/badge?p=@microflows/nodevm"/></a>
@@ -165,6 +165,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://joel.net"><img src="https://avatars.githubusercontent.com/u/742630?v=4?s=100" width="100px;" alt=""/><br /><sub><b>joelnet</b></sub></a><br /><a href="https://github.com/microflows/nodeVM/commits?author=joelnet" title="Code">💻</a></td>
+   <td align="center"><a href="http://github.com/sovlookup"><img src="https://avatars.githubusercontent.com/u/53158137?v=4?s=100" width="100px;" alt=""/><br /><sub><b>joelnet</b></sub></a><br /><a href="https://github.com/microflows/nodeVM/commits?author=sovlookup" title="Code">💻</a></td>
   </tr>
 </table>
 
