@@ -1,13 +1,14 @@
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 <div align="center">
 <img src="https://raw.githubusercontent.com/Paciolan/remote-module-loader/master/media/logo-small.png"/>
 <h1>nodeVM</h1>
 
 <a href="https://img.shields.io/badge/coverage-100%25-brightgreen.svg"><img src="https://img.shields.io/badge/coverage-100%25-brightgreen.svg"/></a>
 <a href="https://github.com/microflows/nodeVM/blob/master/LICENSE.txt"><img src="https://img.shields.io/github/license/microflows/nodeVM?color=379c9c&style=flat-square"/></a>
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 <a href="https://github.com/microflows/nodeVM/stargazers"><img src="https://img.shields.io/github/stars/microflows/nodeVM?color=379c9c&style=flat-square"/></a>
 <a href="https://discord.com/invite/wGSABhbCzN"><img src="https://img.shields.io/discord/813599680713457665?label=chat&logo=discord&color=379c9c&style=flat-square"/></a>
 <a href="https://packagephobia.now.sh/badge?p=@microflows/nodevm"><img src="https://packagephobia.now.sh/badge?p=@microflows/nodevm"/></a>
@@ -174,22 +175,5 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/SOVLOOKUP"><img src="https://avatars.githubusercontent.com/u/53158137?v=4?s=100" width="100px;" alt=""/><br /><sub><b>SOVLOOKUP</b></sub></a><br /><a href="https://github.com/Budibase/budibase/commits?author=SOVLOOKUP" title="Code">💻</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
