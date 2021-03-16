@@ -147,10 +147,33 @@ Sites with a `content_security_policy` header set are likely to not work. CSP pu
 [Read more on CSP](https://developer.chrome.com/extensions/contentSecurityPolicy)
 
 
-## Contributors
+## License
+Apache License, Version 2.0
 
-Joel Thoms (https://twitter.com/joelnet)
+Copyright [2021] [[microflow](https://github.com/microflows/)]
 
-Xia fan (https://github.com/sovlookup)
+This project is based on [remote-module-loader](https://github.com/Paciolan/remote-module-loader)
 
-Icon made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](www.flaticon.com)
+## Contributors✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/SOVLOOKUP"><img src="https://avatars.githubusercontent.com/u/53158137?v=4?s=100" width="100px;" alt=""/><br /><sub><b>SOVLOOKUP</b></sub></a><br /><a href="https://github.com/Budibase/budibase/commits?author=SOVLOOKUP" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
