@@ -165,7 +165,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://joel.net"><img src="https://avatars.githubusercontent.com/u/742630?v=4?s=100" width="100px;" alt=""/><br /><sub><b>joelnet</b></sub></a><br /><a href="https://github.com/microflows/nodeVM/commits?author=joelnet" title="Code">💻</a></td>
-   <td align="center"><a href="http://github.com/sovlookup"><img src="https://avatars.githubusercontent.com/u/53158137?v=4?s=100" width="100px;" alt=""/><br /><sub><b>joelnet</b></sub></a><br /><a href="https://github.com/microflows/nodeVM/commits?author=sovlookup" title="Code">💻</a></td>
+   <td align="center"><a href="http://github.com/sovlookup"><img src="https://avatars.githubusercontent.com/u/53158137?v=4?s=100" width="100px;" alt=""/><br /><sub><b>SOVLOOKUP</b></sub></a><br /><a href="https://github.com/microflows/nodeVM/commits?author=sovlookup" title="Code">💻</a></td>
   </tr>
 </table>
 
