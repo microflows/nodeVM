@@ -33,7 +33,7 @@ npm install @microflows/nodevm
 import vm from "@microflows/nodevm";
 
 async function main() {
-  const newService = await vm("https://v.gonorth.top:444/file/index.js");
+  const newService = await vm("https://cdn.jsdelivr.net/gh/microflows/mfNode.js@publish/release/index.js");
   console.log(newService().name);
 }
 
@@ -46,7 +46,7 @@ main();
 import vm from "@microflows/nodevm";
 
 console.log(
-  vm("https://v.gonorth.top:444/file/index.js").then(
+  vm("https://cdn.jsdelivr.net/gh/microflows/mfNode.js@publish/release/index.js").then(
     newService => newService().name
   )
 );
@@ -77,7 +77,7 @@ import axios from "axios";
 
 const fetcher = url => axios.get(url).then(request => request.data);
 
-vm(url:"yoururl",fetcher:fetcher)
+vm(url:"https://cdn.jsdelivr.net/gh/microflows/mfNode.js@publish/release/index.js",fetcher:fetcher)
 ```
 
 ### Add runtime attachment
@@ -87,7 +87,7 @@ import vm from "@microflows/nodevm";
 
 const const runtime = ["const __dirname = '/home'"]
 
-vm(url:"yoururl",runtime:runtime)
+vm(url:"https://cdn.jsdelivr.net/gh/microflows/mfNode.js@publish/release/index.js",runtime:runtime)
 ```
 
 ### Use require
@@ -95,7 +95,7 @@ vm(url:"yoururl",runtime:runtime)
 ```javascript
 const vm = require('@microflows/nodevm').default;
 console.log(
-  vm("https://v.gonorth.top:444/file/index.js").then(
+  vm("https://cdn.jsdelivr.net/gh/microflows/mfNode.js@publish/release/index.js").then(
     newService => newService().name
   )
 );
