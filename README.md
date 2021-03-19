@@ -33,8 +33,8 @@ npm install @microflows/nodevm
 import vm from "@microflows/nodevm";
 
 async function main() {
-  const newNode = await vm("https://v.gonorth.top:444/file/index.js");
-  console.log(newNode().name);
+  const newService = await vm("https://v.gonorth.top:444/file/index.js");
+  console.log(newService().name);
 }
 
 main();
