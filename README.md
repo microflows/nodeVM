@@ -58,12 +58,12 @@ console.log(
 ## Advance
 ### vm function arguments
 
-| name         | type     |
-| ------------ | -------- |
-| url          | string   |
-| fetcher      | Fetcher  |
-| dependencies | object   |
-| runtime      | string[] |
+| name         | type     | description                                                  |
+| ------------ | -------- | ------------------------------------------------------------ |
+| url          | string   | remote module url                                            |
+| fetcher      | Fetcher  | custom fetcher                                               |
+| runtime      | string[] | code exec before remote module                               |
+| dependencies | object   | custom dependencies (you donnot need this when using mfNode) |
 
 ### Using your own fetcher
 
@@ -90,14 +90,25 @@ const const runtime = ["const __dirname = '/home'"]
 vm(url:"yoururl",runtime:runtime)
 ```
 
+### Use require
+
+```javascript
+const vm = require('@microflows/nodevm').default;
+console.log(
+  vm("https://v.gonorth.top:444/file/index.js").then(
+    newService => newService().name
+  )
+);
+```
+
 ### Content Security Policy (CSP)
 
 Sites with a `content_security_policy` header set are likely to not work. CSP puts a restriction on using `new Function`, which `remote-module-loader` relies upon.
 
 [Read more on CSP](https://developer.chrome.com/extensions/contentSecurityPolicy)
 
-
 ## License
+
 Apache License, Version 2.0
 
 Copyright [2021] [[microflow](https://github.com/microflows/)]
