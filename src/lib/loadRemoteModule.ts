@@ -2,7 +2,7 @@ import memoize from "./memoize";
 import xmlHttpRequestFetcher from "./xmlHttpRequestFetcher/index";
 import nodeFetcher from "./nodeFetcher";
 import runtimeInit from "./runtime"
-import { createRequires } from "..";
+import { createRequires } from "./createRequires";
 
 const isBrowser =
   typeof window !== "undefined" && typeof window.document !== "undefined";

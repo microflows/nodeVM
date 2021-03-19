@@ -26,41 +26,44 @@ npm install @microflows/nodevm
 ```
 
 ## Getting start
-
-### Simple Example
-
-If your module has no external dependencies, this is the easiest method to fetch the remote module.
+### Example
+#### Async/Await Style
 
 ```javascript
-/**
- * src/lib/loadRemoteModule.js
- */
+import vm from "@microflows/nodevm";
 
-import createLoadRemoteModule from "@microflows/nodevm";
+async function main() {
+  const newNode = await vm("https://v.gonorth.top:444/file/index.js");
+  console.log(newNode().name);
+}
 
-export default createLoadRemoteModule();
+main();
 ```
 
-### Require Example
-
-You can pass dependencies to the module. All modules loaded with this version of `loadRemoteModule`, will have the dependencies available to `require`.
+#### Promise Style
 
 ```javascript
-/**
- * src/lib/loadRemoteModule.js
- */
+import vm from "@microflows/nodevm";
 
-import createLoadRemoteModule, {
-  createRequires
-} from "@microflows/nodevm";
-
-const dependencies = {
-  react: require("react")
-};
-
-const requires = createRequires(dependencies);
-export default createLoadRemoteModule({ requires });
+console.log(
+  vm("https://v.gonorth.top:444/file/index.js").then(
+    newService => newService().name
+  )
+);
 ```
+### How to make remote module or scripts?
+
+--> https://github.com/microflows/mfNode.js
+
+## Advance
+### vm function arguments
+
+| name         | type     |
+| ------------ | -------- |
+| url          | string   |
+| fetcher      | Fetcher  |
+| dependencies | object   |
+| runtime      | string[] |
 
 ### Using your own fetcher
 
@@ -69,78 +72,23 @@ The default loader can be overridden if you want to use an alternate method.
 This example uses `axios` for the fetcher.
 
 ```javascript
-/**
- * src/lib/loadRemoteModule.js
- */
-
-import createLoadRemoteModule from "@microflows/nodevm";
+import vm from "@microflows/nodevm";
 import axios from "axios";
 
 const fetcher = url => axios.get(url).then(request => request.data);
 
-export default createLoadRemoteModule({ fetcher });
+vm(url:"yoururl",fetcher:fetcher)
 ```
 
 ### Add runtime attachment
 
 ```javascript
-/**
- * src/lib/loadRemoteModule.js
- */
-
-import createLoadRemoteModule from "@microflows/nodevm";
+import vm from "@microflows/nodevm";
 
 const const runtime = ["const __dirname = '/home'"]
 
-export default createLoadRemoteModule({ runtime });
+vm(url:"yoururl",runtime:runtime)
 ```
-
-## How to make remote module or scripts?
-
---> https://github.com/microflows/mfNode
-
-
-## Advance
-
-Modules are loaded asynchronously, so use similar techniques to any other async function.
-
-### Promise Style
-
-```javascript
-/**
- * src/index.js
- */
-
-import loadRemoteModule from "./lib/loadRemoteModule";
-
-const myModule = loadRemoteModule("http://fake.url/modules/my-module.js");
-
-myModule.then(m => {
-  const value = m.default();
-  console.log({ value });
-});
-```
-
-### Async/Await Style
-
-```javascript
-/**
- * src/index.js
- */
-
-import loadRemoteModule from "./lib/loadRemoteModule";
-
-const main = async () => {
-  const myModule = await loadRemoteModule(
-    "http://fake.url/modules/my-module.js"
-  );
-  const value = myModule.default();
-  console.log({ value });
-};
-
-main();
-```
-
 
 ### Content Security Policy (CSP)
 

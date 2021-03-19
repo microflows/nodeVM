@@ -1,6 +1,6 @@
 declare function require(name:string);
 
-interface Requires {
+export interface Requires {
   (name: string): any;
 }
 
