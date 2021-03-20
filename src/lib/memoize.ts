@@ -4,9 +4,9 @@
  * @param {Function} func Function to memoize
  * @returns {Function} Memoized version of func.
  */
-const memoize = func => {
+const memoize = (func: Function): Function => {
   const cache = {};
-  return key => {
+  return (key: string) => {
     if (key in cache == false) {
       cache[key] = func(key);
     }

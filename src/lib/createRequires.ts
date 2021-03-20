@@ -1,22 +1,24 @@
-declare function require(name:string);
+declare function require(name: string): any;
 
-export interface Requires {
+interface Requires {
   (name: string): any;
 }
 
-interface CreateRequires {
+export interface CreateRequires {
   (dependencies?: object): Requires;
 }
 
-export const createRequires: CreateRequires = dependencies => name => {
+const createRequires: CreateRequires = dependencies => {
   const _dependencies = dependencies || {};
-  _dependencies["require"] = require
-
-  if (!(name in _dependencies)) {
-    throw new Error(
-      `Could not require '${name}'. '${name}' does not exist in dependencies. Make sure you used ncc before upload plugins.`
-    );
-  }
-
-  return _dependencies[name];
+  _dependencies["require"] = require;
+  return name => {
+    if (!(name in _dependencies)) {
+      throw new Error(
+        `Could not require '${name}'. '${name}' does not exist in dependencies. Make sure you used ncc before upload plugins.`
+      );
+    }
+    return _dependencies[name];
+  };
 };
+
+export default createRequires;

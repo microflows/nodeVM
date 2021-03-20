@@ -1,6 +1,6 @@
 {
   "name": "@microflows/nodevm",
-  "version": "3.3.2",
+  "version": "3.3.3",
   "description": "Dynamically load and run JS module from a remote URL for the Browser or Node.js.",
   "main": "dist/index.js",
   "author": "MicroFlow",
@@ -35,7 +35,9 @@
     "lint": "eslint .",
     "prepare": "husky install"
   },
-  "dependencies": {},
+  "dependencies": {
+    "cross-fetch": "^3.1.2"
+  },
   "devDependencies": {
     "@babel/cli": "^7.12.8",
     "@babel/core": "^7.12.9",

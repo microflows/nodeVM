@@ -1,4 +1,4 @@
-import { createRequires } from "../createRequires";
+import createRequires from "../createRequires";
 
 describe("lib/createRequires", () => {
   test("requires dependency", () => {
