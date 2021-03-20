@@ -14,3 +14,11 @@ export default async function vm(
   );
   return await loadRemoteModule(url);
 }
+
+export function newVM(
+  fetcher?: Fetcher,
+  dependencies?: object,
+  runtime?: string[]
+) {
+  return createLoadRemoteModule(dependencies, runtime, fetcher);
+}
