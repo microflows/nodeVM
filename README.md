@@ -51,9 +51,6 @@ console.log(
   )
 );
 ```
-### How to make remote module or scripts?
-
---> https://github.com/microflows/mfNode.js
 
 ## Advance
 ### vm function arguments
