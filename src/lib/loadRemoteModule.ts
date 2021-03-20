@@ -12,18 +12,12 @@ export const createLoadRemoteModule = (
   const _runtime = runtimeInit(runtime);
   const _fetcher = fetcher || defaultFetcher;
 
-  return memoize((url: string) =>
-    _fetcher(url).then(data => {
-      const exports = {};
-      const module = { exports };
-      const func = new Function(
-        "require",
-        "module",
-        "exports",
-        _runtime + data
-      );
-      func(_requires, module, exports);
-      return module.exports;
-    })
-  );
+  return memoize(async (url: string) => {
+    const data = await _fetcher(url);
+    const exports = {};
+    const module = { exports };
+    const func = new Function("require", "module", "exports", _runtime + data);
+    func(_requires, module, exports);
+    return module.exports;
+  });
 };
