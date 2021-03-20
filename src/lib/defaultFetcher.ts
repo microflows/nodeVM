@@ -9,7 +9,7 @@ const urlValid = (url: string) => {
   if (typeof url !== "string") {
     throw new Error("URL must be a string.");
   }
-  if (re.test(url) || url.indexOf("//") === 0) {
+  if (!(re.test(url) || url.indexOf("//") === 0)) {
     throw new Error("URL is not valid.");
   }
   return url;
