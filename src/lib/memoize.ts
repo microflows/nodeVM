@@ -1,10 +1,4 @@
-/**
- * Memoizes a 1-arity function
- *
- * @param {Function} func Function to memoize
- * @returns {Function} Memoized version of func.
- */
-const memoize = func => {
+const memoize = (func: { (url: string): Promise<any> }) => {
   const cache = {};
   return (key: string) => {
     if (key in cache == false) {
