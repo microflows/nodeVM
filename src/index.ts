@@ -1,7 +1,7 @@
 import { createLoadRemoteModule } from "./lib/loadRemoteModule";
 import { Fetcher } from "./lib/defaultFetcher";
 
-export default async function vm(
+export default function vm(
   url: string,
   fetcher?: Fetcher,
   dependencies?: object,
@@ -12,7 +12,7 @@ export default async function vm(
     runtime,
     fetcher
   );
-  return await loadRemoteModule(url);
+  return loadRemoteModule(url);
 }
 
 export function newVM(
