@@ -1,5 +1,6 @@
 import { createLoadRemoteModule } from "./lib/loadRemoteModule";
 import { Fetcher } from "./lib/defaultFetcher";
+import { Validator } from "./lib/defaultValidator";
 
 export default function vm(
   url: string,
@@ -16,9 +17,10 @@ export default function vm(
 }
 
 export function newVM(
-  fetcher?: Fetcher,
   dependencies?: object,
-  runtime?: string[]
+  runtime?: string[],
+  fetcher?: Fetcher,
+  validator?: Validator
 ) {
-  return createLoadRemoteModule(dependencies, runtime, fetcher);
+  return createLoadRemoteModule(dependencies, runtime, fetcher, validator);
 }

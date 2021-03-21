@@ -1,4 +1,5 @@
 declare function require(name: string): any;
+import { DependencyError } from "./errors";
 
 interface Requires {
   (name: string): any;
@@ -13,7 +14,7 @@ const createRequires: CreateRequires = dependencies => {
   _dependencies["require"] = require;
   return name => {
     if (!(name in _dependencies)) {
-      throw new Error(
+      throw new DependencyError(
         `Could not require '${name}'. '${name}' does not exist in dependencies. Make sure you used ncc before upload plugins.`
       );
     }
