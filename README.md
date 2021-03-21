@@ -68,6 +68,15 @@ console.log(
 );
 ```
 
+#### import module directly
+
+```javascript
+import vm from "@microflows/nodevm";
+
+// will fetch react.js from https://www.jsdelivr.com/
+const react = vm('react')
+```
+
 ## Advance
 ### vm function arguments
 
