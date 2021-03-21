@@ -13,7 +13,7 @@
 </div>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
- - Dynamically load and run JS module from a remote URL for the Browser or Node.js.
+ - Dynamically load and run JS module from remote for the Browser or Node.js.
  - Lazy Load Modules to keep initial load times down and load modules just in time, similar to Webpack's code splitting.
  - Update Remote Modules independent of the web application. Update a module without redeploying the web application.
  - A new method of SSR, server-side rendering js instead of html.
