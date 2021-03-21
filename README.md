@@ -52,6 +52,21 @@ console.log(
 );
 ```
 
+#### Use with init
+
+```javascript
+import newVM from "@microflows/nodevm";
+
+// public cache
+const vm = newVM()
+
+console.log(
+  vm("https://cdn.jsdelivr.net/gh/microflows/mfNode.js@publish/release/index.js").then(
+    newService => newService().name
+  )
+);
+```
+
 ## Advance
 ### vm function arguments
 
