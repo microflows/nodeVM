@@ -73,7 +73,7 @@ console.log(
 ```javascript
 import vm from "@microflows/nodevm";
 
-// will fetch react.js from https://www.jsdelivr.com/
+// will fetch react.js from https://www.jsdelivr.com/react
 const react = vm('react')
 ```
 
