@@ -1,6 +1,6 @@
 {
   "name": "@microflows/nodevm",
-  "version": "3.5.1",
+  "version": "3.5.3",
   "description": "Dynamically load and run JS module from a remote URL for the Browser or Node.js.",
   "main": "dist/index.js",
   "author": "MicroFlow",

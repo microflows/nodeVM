@@ -1,15 +1,14 @@
 const __dirname: string = "";
 const __filename: string = __dirname + "mfNode";
 
-const runtimeAttachment: Array<string> = [
+const runtimeAttachment: string[] = [
   `__dirname = "${__dirname}"`,
-  `__filename = "${__filename}"`,
-  "var require = require('require')"
+  `__filename = "${__filename}"`
 ];
 
 const runtimeDefault: string = "\n" + runtimeAttachment.join("\n") + "\n";
 
-export default function runtimeInit(runtime: Array<string>): string {
+export default function runtimeInit(runtime: string[]): string {
   runtime = runtime || [];
   return runtimeDefault + runtime.join("\n") + "\n";
 }
