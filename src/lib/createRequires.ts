@@ -1,4 +1,5 @@
 declare function require(name: string): any;
+import vm, { newVM } from "..";
 import { DependencyError } from "./errors";
 
 interface Requires {
@@ -12,6 +13,11 @@ export interface CreateRequires {
 const createRequires: CreateRequires = dependencies => {
   const _dependencies = dependencies || {};
   _dependencies["require"] = require;
+  _dependencies["@microflows/nodevm"] = {
+    __esModule: true,
+    newVM: newVM,
+    default: vm
+  };
   return name => {
     if (!(name in _dependencies)) {
       throw new DependencyError(
