@@ -55,7 +55,7 @@ console.log(
 #### Use with init
 
 ```javascript
-import newVM from "@microflows/nodevm";
+import { newVM } from "@microflows/nodevm";
 
 // public cache
 const vm = newVM()
