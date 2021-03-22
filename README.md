@@ -18,6 +18,7 @@
  - Update Remote Modules independent of the web application. Update a module without redeploying the web application.
  - A new method of SSR, server-side rendering js instead of html.
  - As fast as your native code.
+ - Support remote module dependency.
  - Manage your pkg in both way of centralized and decentralized. Support moduleName / http(s), ipfs is planned.
  - Only 11kb after compilation.
 
