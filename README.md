@@ -80,7 +80,7 @@ const react = vm('react')
 ```
 
 ## Advance
-### vm function arguments
+### Arguments
 
 | name         | type     | description                                                  |
 | ------------ | -------- | ------------------------------------------------------------ |
