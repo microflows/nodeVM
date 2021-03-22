@@ -19,6 +19,7 @@
  - A new method of SSR, server-side rendering js instead of html.
  - As fast as your native code.
  - Manage your pkg in both way of centralized and decentralized. Support moduleName / http(s), ipfs is planned.
+ - Only 11kb after compilation.
 
 ## Install
 
