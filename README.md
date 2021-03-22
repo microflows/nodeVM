@@ -114,17 +114,6 @@ const const runtime = ["const __dirname = '/home'"]
 vm(url:"https://cdn.jsdelivr.net/gh/microflows/mfNode.js@publish/release/index.js",runtime:runtime)
 ```
 
-### Use require
-
-```javascript
-const vm = require('@microflows/nodevm').default;
-console.log(
-  vm("https://cdn.jsdelivr.net/gh/microflows/mfNode.js@publish/release/index.js").then(
-    newService => newService().name
-  )
-);
-```
-
 ### Content Security Policy (CSP)
 
 Sites with a `content_security_policy` header set are likely to not work. CSP puts a restriction on using `new Function`, which `remote-module-loader` relies upon.
